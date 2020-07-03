@@ -2,7 +2,7 @@
   "name": "quasaresto",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "productName": "Restaurant",
   "author": "iwanbazz <iwan.bazz@gmail.com>",
   "private": true,
   "scripts": {

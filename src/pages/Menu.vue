@@ -10,7 +10,7 @@
     </q-tabs>
     <q-list class="bg-white" separator bordered>
       <q-card class="row" v-for="product in products" :key="product.id">
-        <q-img :src="require(apiUrl + product.image.url)" />
+        <q-img :src="require(`apiUrl + product.image.url`)" />
         <q-card-section>
           <div class="text-subtitle2 price">{{ product.price }}</div>
           <p>{{ product.title }}</p>
@@ -31,13 +31,13 @@ export default {
     return {
       products: [],
       errors: [],
-      apiUrl: 'http://localhost:1337',
+      apiUrl: 'http://35.240.147.181:1337/',
     }
   },
 
   created() {
     axios
-      .get(`http://localhost:1337/products/`)
+      .get(`http://35.240.147.181:1337/`)
       .then(response => {
         this.products = response.data
         console.log('product :', response.data)
